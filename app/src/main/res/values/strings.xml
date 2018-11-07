@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Datos personales</string>
+    <string name="tv_name">Nombre</string>
+    <string name="tv_surname">Primer Apellido</string>
+    <string name="tv_surname2">Segundo Apellido</string>
+    <string name="tv_age">Edad</string>
+    <string name="tv_sex">Género</string>
+    <string name="hint_name">Escriba su nombre</string>
+    <string name="hint_surname">Escriba su primer apellido</string>
+    <string name="hint_surname2">Escriba su segundo apellido</string>
+    <string name="hint_age">Escriba aquí su edad</string>
+    <string name="tv_marital_status">Estado civil</string>
+    <string name="rb_male">Hombre</string>
+    <string name="rb_female">Mujer</string>
+    <string name="tv_has_childrens">¿Tiene hijos?</string>
+    <string name="btn_generate">Generar información</string>
+    <string name="btn_delete">Borrar todo</string>
+
+    <!--Elementos del spinner-->
+    <string-array name="sp_marital_status">
+        <item>Casado/a</item>
+        <item>Soltero/a</item>
+        <item>Viudo/a</item>
+        <item>Otro</item>
+    </string-array>
+</resources>
