@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -55,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         btn_generate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(check_values()== true)
+                if(check_values())
                 {
                         Log.i("Main_A", "Error, Campos vacios");
                 }
@@ -69,10 +68,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public String generateInformation()
     {
-        String resultado=et_surname.getText().toString() + " "+ et_surname2.getText().toString() + ", " + et_name.getText().toString() + ", "+ mayorEdad()+ ", "+rb_values()+", "+sp_marital_status.getSelectedItem()+ ", "+ has_childrends();
+        String resultado=et_surname.getText().toString() + " "+ et_surname2.getText().toString() + ", " + et_name.getText().toString() + ", "+ legalAge()+ ", "+rb_values()+", "+sp_marital_status.getSelectedItem()+ ", "+ has_childrends();
         return resultado;
     }
-    public String mayorEdad()
+    public String legalAge()
     {
         int age = Integer.parseInt(et_age.getText().toString());
         String resultado;
