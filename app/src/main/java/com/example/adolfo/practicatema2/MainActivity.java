@@ -126,7 +126,6 @@ public class MainActivity extends AppCompatActivity {
         if (et_name.length()==0 || et_surname.length()==0 || et_surname2.length()==0 || et_age.length()==0 || !rb_male.isChecked() && !rb_female.isChecked())
         {
             Toast.makeText(this, getResources().getString(R.string.error_empty), Toast.LENGTH_SHORT).show();
-            tv_generate_information.setText(getResources().getString(R.string.error_empty));
             return true;
         }
             return false;
