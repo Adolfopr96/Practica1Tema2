@@ -1,5 +1,6 @@
 package com.example.adolfo.practicatema2;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -21,10 +22,9 @@ public class MainActivity extends AppCompatActivity {
     EditText et_surname;
     EditText et_surname2;
     EditText et_age;
-    Switch sw_childrens;
+    Switch sw_children;
     RadioButton rb_male;
     RadioButton rb_female;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,10 +38,9 @@ public class MainActivity extends AppCompatActivity {
         et_surname = findViewById(R.id.et_surname);
         et_surname2 = findViewById(R.id.et_surname2);
         et_age = findViewById(R.id.et_age);
-        sw_childrens = findViewById(R.id.sw_childrens);
+        sw_children = findViewById(R.id.sw_childrens);
         rb_male = findViewById(R.id.rb_male);
         rb_female = findViewById(R.id.rb_female);
-
 
         btn_delete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,8 +67,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public String generateInformation()
     {
-        String resultado=et_surname.getText().toString() + " "+ et_surname2.getText().toString() + ", " + et_name.getText().toString() + ", "+ legalAge()+ ", "+rb_values()+", "+sp_marital_status.getSelectedItem()+ ", "+ has_childrends();
-        return resultado;
+        return et_surname.getText().toString() + " "+ et_surname2.getText().toString() + ", " + et_name.getText().toString() + ", "+ legalAge()+ ", "+rb_values()+", "+sp_marital_status.getSelectedItem()+ ", "+ has_children();
     }
     public String legalAge()
     {
@@ -77,24 +75,24 @@ public class MainActivity extends AppCompatActivity {
         String resultado;
         if(age > 18)
         {
-            resultado ="Mayor de edad";
+            resultado =getResources().getString(R.string.legal_age);
         }
         else
             {
-            resultado = "Menor de edad";
+            resultado = getResources().getString(R.string.no_legal_age);
         }
         return resultado;
     }
-    public String has_childrends()
+    public String has_children()
     {
         String result;
-        if (sw_childrens.isSelected())
+        if (sw_children.isChecked())
         {
-            result = "Con hijos";
+            result = getResources().getString(R.string.has_childrens_yes);
         }
         else
         {
-            result = "Sin hijos";
+            result = getResources().getString(R.string.childless);
         }
         return result;
     }
@@ -103,11 +101,11 @@ public class MainActivity extends AppCompatActivity {
         String result="";
         if (rb_male.isChecked())
         {
-            result = "Hombre";
+            result = rb_male.getText().toString();
         }
         else if (rb_female.isChecked())
         {
-            result = "Mujer";
+            result = rb_female.getText().toString();
         }
         return result;
     }
@@ -118,17 +116,17 @@ public class MainActivity extends AppCompatActivity {
         et_surname.setText("");
         et_surname2.setText("");
         et_age.setText("");
-        sw_childrens.setChecked(false);
+        sw_children.setChecked(false);
         sp_marital_status.setSelection(0);
         rb_female.setChecked(false);
         rb_male.setChecked(false);
     }
     public boolean check_values()
     {
-        ;
-        if (et_age.length()==0 || et_surname.length()==0 || et_surname2.length()==0 || et_age.length()==0)
+        if (et_name.length()==0 || et_surname.length()==0 || et_surname2.length()==0 || et_age.length()==0 || !rb_male.isChecked() && !rb_female.isChecked())
         {
-            Toast.makeText(this, "Error, los campos deben estar rellenos.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getResources().getString(R.string.error_empty), Toast.LENGTH_SHORT).show();
+            tv_generate_information.setText(getResources().getString(R.string.error_empty));
             return true;
         }
             return false;

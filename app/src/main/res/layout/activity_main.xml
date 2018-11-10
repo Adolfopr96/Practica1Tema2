@@ -15,7 +15,7 @@
         android:ems="10"
         android:hint="@string/hint_name"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
+        android:inputType="textCapWords|textPersonName"
         android:textColorHighlight="@color/colorPrimary"
         tools:targetApi="26" />
 
@@ -30,7 +30,7 @@
         android:ems="10"
         android:hint="@string/hint_surname"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
+        android:inputType="textCapWords|textPersonName"
         tools:targetApi="26" />
 
     <TextView
@@ -82,7 +82,7 @@
         android:ems="10"
         android:hint="@string/hint_surname2"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
+        android:inputType="textCapWords|textPersonName"
         tools:targetApi="26" />
 
     <EditText

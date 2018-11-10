@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Personal information</string>
+    <string name="tv_name">Name</string>
+    <string name="tv_surname">First Surname</string>
+    <string name="tv_surname2">Second Surname</string>
+    <string name="tv_age">Age</string>
+    <string name="tv_sex">Sex</string>
+    <string name="hint_name">"Write your name here "</string>
+    <string name="hint_surname">Write your 1º surname</string>
+    <string name="hint_surname2">Write your 2º surname</string>
+    <string name="hint_age">Write your age here</string>
+    <string name="tv_marital_status">Marital status</string>
+    <string name="rb_male">Male</string>
+    <string name="rb_female">Female</string>
+    <string name="tv_has_childrens">Has childrens?</string>
+    <string name="btn_generate">Generate information</string>
+    <string name="btn_delete">"Delete "</string>
+    <string name="str_en">English</string>
+    <string name="str_es">Spanish</string>
+    <string name="has_childrens_yes">With childrens</string>
+    <string name="childless">childless</string>
+    <string name="error_empty">"Error, the fields must be filled."</string>
+    <string name="legal_age">Adult</string>
+    <string name="no_legal_age">Younger</string>
+    <string name="sp_married">Married</string>
+    <string name="sp__single">Single</string>
+    <string name="sp_other">Other</string>
+    <string name="sp_widower">Widower</string>
+</resources>

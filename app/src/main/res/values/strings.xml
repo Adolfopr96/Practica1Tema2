@@ -15,12 +15,29 @@
     <string name="tv_has_childrens">¿Tiene hijos?</string>
     <string name="btn_generate">Generar información</string>
     <string name="btn_delete">Borrar todo</string>
+    <string name="has_childrens_yes">Con hijos</string>
+    <string name="childless">Sin hijos</string>
+    <string name="legal_age">Mayor de edad</string>
+    <string name="no_legal_age">Menos de edad</string>
+    <string name="error_empty">Error, los siguientes camposdeben estar rellenos: </string>
+    <string name="sp_married">Casado/a</string>
+    <string name="sp__single">Soltero/a</string>
+    <string name="sp_widower">Viudo/a</string>
+    <string name="sp_other">Otro/a</string>
 
     <!--Elementos del spinner-->
     <string-array name="sp_marital_status">
-        <item>Casado/a</item>
-        <item>Soltero/a</item>
-        <item>Viudo/a</item>
-        <item>Otro</item>
+        <item>@string/sp_married</item>
+        <item>@string/sp__single</item>
+        <item>@string/sp_widower</item>
+        <item>@string/sp_other</item>
+    </string-array>
+
+    <!--Idiomas-->
+    <string name="str_en">Inglés</string>
+    <string name="str_es">Español</string>
+    <string-array name="languages" >
+        <item>@string/str_en</item>
+        <item>@string/str_es</item>
     </string-array>
 </resources>
