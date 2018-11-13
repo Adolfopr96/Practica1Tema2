@@ -20,7 +20,7 @@
     <string name="str_es">Spanish</string>
     <string name="has_childrens_yes">With childrens</string>
     <string name="childless">childless</string>
-    <string name="error_empty">"Error, the fields must be filled."</string>
+    <string name="error_empty">Error, the following fields must be filled: Name, 1st and 2nd lastName, age and sex.</string>
     <string name="legal_age">Adult</string>
     <string name="no_legal_age">Younger</string>
     <string name="sp_married">Married</string>

@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     Switch sw_children;
     RadioButton rb_male;
     RadioButton rb_female;
+    String result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         sw_children = findViewById(R.id.sw_childrens);
         rb_male = findViewById(R.id.rb_male);
         rb_female = findViewById(R.id.rb_female);
+        result = getResources().getString(R.string.error_empty);
 
         btn_delete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,14 +55,17 @@ public class MainActivity extends AppCompatActivity {
         btn_generate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(check_values())
+                if (return_error())
                 {
-                        Log.i("Main_A", "Error, Campos vacios");
+                    Log.i("Main_A", "Error, Campos vacios");
+                    tv_generate_information.setTextColor(getColor(R.color.red));
+                    tv_generate_information.setText(result);
+
                 }
                 else{
                         Log.i("Main_A", "Se ha generado información");
-
-                        tv_generate_information.setText(generateInformation());
+                    tv_generate_information.setTextColor(getColor(R.color.black));
+                    tv_generate_information.setText(generateInformation());
                 }
                 }
         });
@@ -121,13 +126,8 @@ public class MainActivity extends AppCompatActivity {
         rb_female.setChecked(false);
         rb_male.setChecked(false);
     }
-    public boolean check_values()
+    public boolean return_error()
     {
-        if (et_name.length()==0 || et_surname.length()==0 || et_surname2.length()==0 || et_age.length()==0 || !rb_male.isChecked() && !rb_female.isChecked())
-        {
-            Toast.makeText(this, getResources().getString(R.string.error_empty), Toast.LENGTH_SHORT).show();
-            return true;
-        }
-            return false;
+        return (et_name.length()==0 || et_surname.length()==0 || et_surname2.length()==0 || et_age.length()==0 || !rb_male.isChecked() && !rb_female.isChecked());
     }
 }
