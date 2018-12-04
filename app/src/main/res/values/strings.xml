@@ -18,7 +18,7 @@
     <string name="has_childrens_yes">Con hijos</string>
     <string name="childless">Sin hijos</string>
     <string name="legal_age">Mayor de edad</string>
-    <string name="no_legal_age">Menos de edad</string>
+    <string name="no_legal_age">Menor de edad</string>
     <string name="error_empty">Error, los siguientes campos deben estar rellenos: Nombre, 1er y 2º apellido, edad y género.</string>
     <string name="sp_married">Casado/a</string>
     <string name="sp__single">Soltero/a</string>

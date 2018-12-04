@@ -160,13 +160,13 @@
     <Button
         android:id="@+id/btn_generate"
         style="@style/style_buttons"
-        android:layout_width="@dimen/btn_generate_width_land"
-        android:layout_height="@dimen/btn_generate_height_land"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="224dp"
-        android:layout_marginEnd="152dp"
+        android:layout_marginEnd="151dp"
         android:layout_marginBottom="0dp"
         android:fontFamily="@font/roboto_black"
         android:text="@string/btn_generate" />
@@ -174,12 +174,12 @@
     <TextView
         android:id="@+id/tv_generate_information"
         style="@style/style_practica"
-        android:layout_width="@dimen/tv_generate_information_width_land"
-        android:layout_height="@dimen/tv_generate_information_height_land"
+        android:layout_width="581dp"
+        android:layout_height="38dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="225dp"
-        android:layout_marginEnd="0dp"
+        android:layout_marginEnd="6dp"
         android:fontFamily="@font/roboto_black" />
 
     <RadioGroup
@@ -216,8 +216,8 @@
     <Button
         android:id="@+id/btn_delete"
         style="@style/style_buttons"
-        android:layout_width="@dimen/btn_delete_width_land"
-        android:layout_height="@dimen/btn_delete_height_land"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="-4dp"
