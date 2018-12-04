@@ -6,7 +6,8 @@
 
     <EditText
         android:id="@+id/et_firts_name"
-        android:layout_width="253dp"
+        style="@style/style_practica"
+        android:layout_width="@dimen/et_name_width"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/tv_firts_name"
         android:layout_alignParentTop="true"
@@ -21,7 +22,8 @@
 
     <EditText
         android:id="@+id/et_surname"
-        android:layout_width="237dp"
+        style="@style/style_practica"
+        android:layout_width="@dimen/et_surname_width"
         android:layout_height="wrap_content"
         android:layout_below="@+id/et_firts_name"
         android:layout_alignStart="@+id/tv_surname"
@@ -35,8 +37,7 @@
 
     <TextView
         android:id="@+id/tv_firts_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/style_practica"
         android:layout_alignBaseline="@+id/et_firts_name"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -44,11 +45,12 @@
         android:layout_marginTop="66dp"
         android:fontFamily="@font/roboto_black"
         android:text="@string/tv_name"
-        android:textColor="#303F9F" />
+        />
 
     <TextView
         android:id="@+id/tv_surname"
-        android:layout_width="89dp"
+        style="@style/style_practica"
+        android:layout_width="@dimen/tv_surname1_width"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/et_surname"
         android:layout_alignParentStart="true"
@@ -56,24 +58,24 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="83dp"
         android:fontFamily="@font/roboto_black"
-        android:text="@string/tv_surname"
-        android:textColor="#303F9F" />
+        android:text="@string/tv_surname" />
 
     <TextView
         android:id="@+id/tv_surname2"
-        android:layout_width="90dp"
+        style="@style/style_practica"
+        android:layout_width="@dimen/tv_surname2_width"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_surname"
         android:layout_alignBaseline="@+id/et_surname2"
         android:layout_alignParentStart="true"
         android:layout_marginStart="10dp"
         android:fontFamily="@font/roboto_black"
-        android:text="@string/tv_surname2"
-        android:textColor="#303F9F" />
+        android:text="@string/tv_surname2" />
 
     <EditText
         android:id="@+id/et_surname2"
-        android:layout_width="273dp"
+        style="@style/style_practica"
+        android:layout_width="@dimen/et_surname2_width"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/et_firts_name"
         android:layout_alignParentTop="true"
@@ -87,6 +89,7 @@
 
     <EditText
         android:id="@+id/et_age"
+        style="@style/style_practica"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/et_firts_name"
@@ -101,8 +104,7 @@
 
     <TextView
         android:id="@+id/tv_age"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/style_practica"
         android:layout_alignBaseline="@+id/et_age"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -110,23 +112,22 @@
         android:layout_marginTop="187dp"
         android:fontFamily="@font/roboto_black"
         android:text="@string/tv_age"
-        android:textColor="#303F9F" />
+        />
 
     <TextView
         android:id="@+id/tv_marital_status"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/style_practica"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="295dp"
         android:fontFamily="@font/roboto_black"
         android:text="@string/tv_marital_status"
-        android:textColor="#303F9F" />
+        />
 
     <Spinner
         android:id="@+id/sp_marital_status"
-        android:layout_width="202dp"
+        android:layout_width="@dimen/sp_marital_status_width"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -146,8 +147,7 @@
 
     <Button
         android:id="@+id/btn_generate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/style_practica"
         android:layout_below="@+id/tv_generate_information"
         android:layout_alignStart="@+id/tv_surname"
         android:layout_marginTop="8dp"
@@ -156,8 +156,7 @@
 
     <Button
         android:id="@+id/btn_delete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/style_practica"
         android:layout_alignTop="@+id/btn_generate"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
@@ -168,15 +167,13 @@
 
     <TextView
         android:id="@+id/tv_sex2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/style_practica"
         android:layout_below="@+id/et_age"
         android:layout_alignStart="@+id/tv_surname"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="25dp"
         android:fontFamily="@font/roboto_black"
-        android:text="@string/tv_sex"
-        android:textColor="#303F9F" />
+        android:text="@string/tv_sex" />
 
     <RadioGroup
         android:id="@+id/rb_group_sex"
@@ -190,32 +187,28 @@
 
         <RadioButton
             android:id="@+id/rb_male"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/style_practica"
             android:layout_weight="1"
             android:fontFamily="@font/roboto_black"
-            android:text="@string/rb_male"
-            android:textColor="#303F9F" />
+            android:text="@string/rb_male" />
 
         <RadioButton
             android:id="@+id/rb_female"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/style_practica"
             android:layout_weight="1"
             android:fontFamily="@font/roboto_black"
             android:text="@string/rb_female"
-            android:textColor="#303F9F" />
+             />
     </RadioGroup>
 
     <Switch
         android:id="@+id/sw_childrens"
-        android:layout_width="161dp"
-        android:layout_height="wrap_content"
+        style="@style/style_practica"
+        android:layout_width="@dimen/sw_childrens_width"
         android:layout_above="@+id/tv_generate_information"
         android:layout_alignStart="@+id/tv_firts_name"
         android:layout_marginBottom="-371dp"
         android:fontFamily="@font/roboto_black"
-        android:text="@string/tv_has_childrens"
-        android:textColor="#303F9F" />
+        android:text="@string/tv_has_childrens" />
 
 </RelativeLayout>

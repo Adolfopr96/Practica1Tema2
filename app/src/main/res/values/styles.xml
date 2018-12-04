@@ -3,9 +3,24 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@android:color/background_light</item>
+        <item name="colorPrimaryDark">@color/red</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/tv_colors</item>
+        <item name="android:colorForeground">@color/colorPrimary</item>
     </style>
 
+    <style name="style_practica" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tv_colors</item>
+    </style>
+    <style name="style_buttons" parent="@android:style/TextAppearance.Small">
+         <item name="android:textColor">@color/tv_colors</item>
+    </style>
+
+    <style name="TemaPracticaTema3" parent="AppTheme" >
+        <item name="colorPrimaryDark">@color/green</item>
+        <item name="colorPrimary">@color/barra_app</item>
+    </style>
 </resources>
