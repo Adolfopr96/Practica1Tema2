@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tv_surname1_width">80dp</dimen>
+    <dimen name="tv_surname2_width">87dp</dimen>
+    <dimen name="tv_age_width">80dp</dimen>
+    <dimen name="et_name_width">253dp</dimen>
+    <dimen name="et_surname_width">237dp</dimen>
+    <dimen name="et_surname2_width">273dp</dimen>
+    <dimen name="tv_name_width">3dp</dimen>
+    <dimen name="tv_surname1_width_land">89dp</dimen>
+    <dimen name="tv_surname2_width_land">90dp</dimen>
+    <dimen name="et_name_width_land">249dp</dimen>
+    <dimen name="et_surname_width_land">237dp</dimen>
+    <dimen name="et_surname2_width_land">273dp</dimen>
+    <dimen name="sw_childrens_width_land">177dp</dimen>
+    <dimen name="btn_generate_width_land">216dp</dimen>
+    <dimen name="btn_generate_height_land">35dp</dimen>
+    <dimen name="btn_delete_width_land">145dp</dimen>
+    <dimen name="btn_delete_height_land">35dp</dimen>
+    <dimen name="tv_generate_information_width_land">587dp</dimen>
+    <dimen name="tv_generate_information_height_land">50dp</dimen>
+    <dimen name="rb_sex_width_land">181dp</dimen>
+    <dimen name="rb_sex_height_land">21dp</dimen>
+    <dimen name="sp_marital_status_width_land">147dp</dimen>
+    <dimen name="sp_marital_status_width">202dp</dimen>
+    <dimen name="rb_female_height_land">21dp</dimen>
+    <dimen name="sw_childrens_width">161dp</dimen>
+</resources>
